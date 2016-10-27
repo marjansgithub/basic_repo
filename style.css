@@ -36,3 +36,14 @@ table tr,td,th{
 	height:1000px;
 	width:970px;
 	background-color: #edf7c9;
+}
+table tr,td,th{
+	width:200px;
+	height:50px;
+	background-color:#eef;
+}
+#wrapper{
+	height:1000px;
+	width:970px;
+	background-color: #edf7c9;
+}
