@@ -1,0 +1,38 @@
+/*CSS reset settings here*/
+
+	position: relative;
+}
+#fname{
+	width:400px;
+}*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: verdana;
+	font-size: 12px;
+	
+}
+
+h1{
+	padding: 20px 120px 0px 300px;
+	font-size: 22px;
+	color:brown;
+}
+
+form{ 
+	position:absolute;
+	background-color: silver;
+	top:50px;
+	left:0px;
+
+}
+table tr,td,th{
+	width:300px;
+	height:50px;
+	background-color:#eef;
+}
+#wrapper{
+	height:1000px;
+	width:970px;
+	background-color: #edf7c9;
