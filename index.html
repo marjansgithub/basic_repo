@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>contact card</title>
+      <meta charset="UTF-8">
+      <meta name="description" content=" James consulting">
+      <link rel="stylesheet" type="text/css" href="contact.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script>
+         $(document).ready(function(){
+          console.log('ready');
+          var field;
+          $('form').submit(function(){
+            field=($(this).serialize());
+            return false;
+               });
+
+            $('input[type="submit"]').click(function () {
+            console.log(field);
+            // $('form').submit();
+
+               
+            $('#mytable').append("<tr><td>"+$('#first').val()+"</td><td>"+$('#last').val()+"</td><td>"+$('#email').val()+"</td><td>"+$('#contact').val()+"</td></tr>");
+
+            $('.empty').val('');
+            
+              
+            });
+         
+            
+
+         });
+      </script>
+   </head>
+   <body>
+      <div id="wrapper">
+         
+               <form>
+                  <p>Contact Card</p>
+                  First name:
+                  <input id="first" class="empty" type="text" name="firstname"><br>
+                  Last name:
+                  <input id="last" class="empty" type="text" name="lastname"><br>
+                  Description:
+                  <textarea id="description" class="empty" type="textarea" name="description"> </textarea><br>
+               
+                  <input type="submit" name="adduser" value="Add User"><br>
+               </form>
+            </div>
+      </div>
+   </body>
+</html>
